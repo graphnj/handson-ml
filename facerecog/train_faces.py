@@ -8,8 +8,8 @@ from sklearn.model_selection import train_test_split
 
 my_faces_path = './my_faces'
 other_faces_path = './other_faces'
-my_faces_path = 'G:/MachineLearning/github/MachineLearning/facerecog/dataset/64x64/jing'
-other_faces_path = 'G:/MachineLearning/github/MachineLearning/facerecog/dataset/64x64/mama'
+my_faces_path = 'G:/MachineLearning/dataset/64x64/jing'
+other_faces_path = 'G:/MachineLearning/dataset/64x64/mama'
 
 size = 64
 
@@ -74,7 +74,7 @@ y_ = tf.placeholder(tf.float32, [None, 2])
 keep_prob = tf.placeholder(tf.float32)
 keep_prob_75 = tf.placeholder(tf.float32)
 
-tf.reset_default_graph()
+
 
 
 def weightVariable(shape):
